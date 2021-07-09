@@ -1,0 +1,400 @@
+
+/* ==========ANCHOR Less 1200px width ========= */
+@media only screen and (max-width: 1200px){
+    #About .col-1 h1, #Home .col-1 h1, #Contact .col-1 h1, #Portfolio .col-1 h1 {
+        font-size: 4.2rem;
+    }
+    #barGraph {
+        height: 350px;
+    }
+}
+
+
+
+
+/* ============ANCHOR Less then 1020px width ============== */
+
+@media only screen and (max-width: 1020px){
+    #footer .pageLinks{
+        display: none;
+    }
+    #quickFacts{
+        grid-template-areas: 
+        'item-1 item-1 item-1 item-1 item-1'
+        'item-2 item-2 item-2 item-2 item-2'
+        'item-3 item-3 item-3 item-3 item-3'
+        'item-4 item-4 item-4 item-4 item-4'
+        'item-5 item-5 item-5 item-5 item-5'
+        'item-6 item-6 item-6 item-6 item-6';
+
+    }
+    .detail-img {
+        display: none;
+    }
+    #About .col-1 h1, #Home .col-1 h1, #Contact .col-1 h1, #Portfolio .col-1 h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    #About .col-1 h4, #Portfolio .col-1 h4{
+        font-size: 1.3rem;
+    }
+    /* #About .col-1 p, #Home .col-1 p, #Portfolio .col-1 p{
+        font-size: 1rem;
+    } */
+    .contact-link img{
+        width: 50px;
+    }
+    .contact-link h3{
+        font-size: 1.3rem;
+    }
+    .navLinks ul li{
+        margin: 5px 10px;
+    }
+    #footer .navLinks ul li a{
+        padding: 0;
+    }
+    #footer .navLinks ul li{
+        margin: 5px 6px ;
+    }
+}
+
+
+
+/* =============ANCHOR Less 830px  width ================ */
+
+@media only screen and (max-width: 830px){
+    .container{
+        margin-top: 5rem;
+    }
+    #About .col-1 h1, #Home .col-1 h1, #Contact .col-1 h1, #Portfolio .col-1 h1 {
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+    #Home .row, #About .row, #Contact .row, #Portfolio .row{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #Home .row{
+        /* flex-direction: column-reverse; */
+        justify-content: space-around;
+    }
+    #Home .col-1 img{
+        margin-top: 25px;
+    }
+    #About .col-1 img, #Home .col-1 img, #Contact .col-1 img, #Portfolio .col-1 img{
+        padding: 0 4rem ;
+    }
+    
+    .mid h5{
+        font-size: 1.2rem;
+    }
+    .mid h5:before{
+        width: 25%;
+    }
+    .mid h5:after{
+        width: 25%;
+    }
+
+    #pieChart{
+        margin-top: 5rem;
+    }
+    #p-designer, #p-coder{
+        text-align: center;
+        width: 100%;
+    }
+    #barGraph{
+        height: 230px;
+    }
+    .contact-link img{
+        width: 65px !important;
+        height: 100%;
+        padding: 0 !important;
+    }
+    .email-content {
+        grid-template-areas: 
+            'input-1 input-1 input-1 input-1'
+            'input-2 input-2 input-2 input-2'
+            'input-3 input-3 input-3 input-3'
+            'submit-btn submit-btn submit-btn submit-btn';
+    }
+
+    .navLinks ul li{
+        margin: 5px 5px;
+    }
+    #Nav-1{
+        display: none;
+    }
+
+/* =============== Navbar Menu ============= */
+    #Navbar{
+        z-index: 100;
+    }
+    .Responsive-navbar .row .logo,.Responsive-navbar .row .nav-row{
+        z-index: 100;
+    }
+    .nav-row{
+        display: flex;
+    }
+    .hamburger{
+        z-index: 100;
+        padding: 3px;
+        background-color: var(--bg-color);
+        border-radius: 50px;
+        box-shadow:  4px 4px 10px var(--shadow-dark),
+                    -4px -4px 10px var(--white-color);
+    }
+
+    #Navbar .navLinks{
+        margin: 0;
+    }
+    .menuBar{
+        position: relative;
+
+    }
+    .Responsive-navbar .navLinks{
+        position: fixed;
+        top: -20px;
+        right: 0;
+        height: 500px;
+        width: 100%;
+        padding: 7rem  8%  1rem  8%;
+        background-color: var(--bg-color);
+        z-index: 50;
+        border-radius: 20px;
+        box-shadow: 2px 0px 5px var(--shadow-dark);
+                    
+        /* transform: translateY(-90vh); */
+        transition: transform 0.5s ease-in-out;
+    }
+  
+    .Responsive-navbar .navLinks ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Responsive-navbar .navLinks ul li {
+        margin-top: 1.5rem;
+        width: 100%;
+        border-bottom: 1px solid var(--font-color);
+    }
+    .Responsive-navbar .navLinks ul li a{
+        font-size: 1.5rem;
+        display: block;
+        /* height: 30px; */
+        width: 100%;
+        text-align: center;
+        line-height: 1.8rem;
+        padding: 5px 5px;
+    }
+    .Active-link.middle::after{
+        bottom: -1px;
+    }
+    .Active-link.middle::before{
+        bottom: -1px;
+    }
+    .ImgCard{
+        flex-basis: 35%;
+    }
+}
+
+
+/* ==========ANCHOR More 830px ============== */
+
+@media only screen and (min-width: 830px){
+    #Nav-2{
+        display: none;
+    }
+}
+
+
+
+/* ==========ANCHOR Less 620px ============== */
+
+@media only screen and (max-width: 620px){
+    #About .col-1 h1, #Home .col-1 h1, #Contact .col-1 h1, #Portfolio .col-1 h1{
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    #About .col-1 img, #Home .col-1 img, #Contact .col-1 img, #Portfolio .col-1 img{
+        padding: 0 2rem;
+    }
+    #barGraph{
+        height: 150px;
+    }
+
+    .mid h5{
+        font-size: 1.1rem;
+        letter-spacing: 0.8px;
+    }
+    .mid h5:before{
+        width: 20%;
+    }
+    .mid h5:after{
+        width: 20%;
+    }
+    .submit-btn{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .submit-notSub{
+        margin-bottom: 20px;
+    }
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    .ImgCard{
+        min-height: 156px;
+        min-width: 156px;
+        /* flex-basis: 25%; */
+    }
+}
+
+
+/* ==========ANCHOR Less 480px ============== */
+
+@media only screen and (max-width: 480px){
+    #About .col-1 h1, #Home .col-1 h1, #Contact .col-1 h1, #Portfolio .col-1 h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    #About .col-1 img, #Home .col-1 img, #Contact .col-1 img, #Portfolio .col-1 img{
+        padding: 0 1rem;
+    }
+    #Home .col-1 img{
+        min-width: 100%;
+    }
+    .C-inputs input{
+        margin: 0;
+        width: 100%;
+        /* max-width: fit-content; */
+    }
+    .C-inputs textarea{
+        margin: 0;
+        width: 100%;
+        /* padding: 0; */
+    }
+    .cardbg a{
+        width: 100%;
+    }
+    .cardbg{
+        width: 100%;
+        min-width: 100%;
+        padding: 16px;
+    }
+    .cardTitle h4{
+        width: 200px;
+    }
+    #barGraph{
+        display: none;
+    }
+    .skills-title{
+        display: none;
+    }
+    #pie-diagram{
+        height: 350px;
+    }
+    .col-2{
+        margin: 30px 0;
+    }
+    .cardTitle, .cardP, .siteurl{
+        margin-top: 14px;
+    }
+    .contact-link h3::after{
+        right: 0px;
+    }
+    #footer{
+        height: 100%;
+        padding: 1.5rem 0;
+    }
+    #footer .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-end;
+    }
+    .social-links{
+        justify-content: space-evenly;
+    }
+    .f-content{
+        margin-top: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    .ImgCard{
+        min-height: 130px;
+        min-width: 130px;
+        padding: 0.8rem;
+        margin: 10px 3px;
+    }
+}
+
+
+
+/* ==========ANCHOR Less 375px ============== */
+
+@media only screen and (max-width: 375px){
+    #About .col-1 h1, #Home .col-1 h1, #Contact .col-1 h1, #Portfolio .col-1 h1{
+        font-size: 2.5rem;
+        line-height: 2.7rem;
+        font-weight: 750;
+    }
+    #About .col-1 p, #Home .col-1 p, #Portfolio .col-1 p{
+        font-size: 1.1rem;
+    }
+    .mid h5{
+        font-size: 1rem;
+        letter-spacing: 0.8px;
+    }
+    .mid h5:before{
+        width: 12%;
+    }
+    .mid h5:after{
+        width: 12%;
+    }
+    .label{
+        margin-right: 1rem;
+    }
+    .contact-link img{
+        width: 44px !important;
+    }
+    .contact-link h3{
+        font-size: 1.2rem;
+    }
+    #About .col-1 img, #Home .col-1 img, #Contact .col-1 img, #Portfolio .col-1 img{
+        padding: 0 0.5rem;
+    }
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+    .s-link{
+        margin-right: 10px;
+    }
+    .ImgCard{
+        min-height: 120px;
+        min-width: 120px;
+        padding: 0.7rem;
+    }
+}
+
+
+/* ==========ANCHOR Less 300px ============== */
+
+@media only screen and (max-width: 290px){
+    #About .col-1 h1, #Home .col-1 h1, #Contact .col-1 h1, #Portfolio .col-1 h1{
+        font-size: 2.1rem;
+        line-height: 2.5rem;
+    }
+    .contact-link img{
+        width: 40px !important;
+    }
+    .contact-link h3{
+        font-size: 1rem;
+    }
+    .cardTitle h4{
+        width: 150px;
+    }
+    .ImgCard{
+        flex-basis: 80%;
+    }
+}
